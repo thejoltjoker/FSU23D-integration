@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/animal
+Content-Type: application/json
+
+{
+    "name": "Bee",
+    "habitat": "Hive",
+    "sound": "Buzz",
+    "emoji": "🐝"
+  }
+###
+GET http://localhost:3000/api/animal/lion
+###
+GET http://localhost:3000/api/animals
+###
+
