@@ -1,0 +1,28 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "sender": "User",
+      "timestamp": "2024-02-29T12:00:00Z",
+      "content": "Hello, how are you?"
+    },
+    {
+      "id": 2,
+      "sender": "Server",
+      "timestamp": "2024-02-29T12:05:00Z",
+      "content": "I'm doing well, thank you! How can I assist you today?"
+    },
+    {
+      "id": 3,
+      "sender": "User",
+      "timestamp": "2024-02-29T12:10:00Z",
+      "content": "I have a question about the API."
+    },
+    {
+      "id": 4,
+      "sender": "Server",
+      "timestamp": "2024-02-29T12:15:00Z",
+      "content": "Sure, feel free to ask your question, and I'll do my best to help!"
+    }
+  ]
+}
