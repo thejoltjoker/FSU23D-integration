@@ -14,7 +14,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
     socket.emit("video-progress", seconds);
   };
 
-  const handleSeek = (seconds: number, maxDelay: number = 0.1) => {
+  const handleSeek = (seconds: number, maxDelay: number = 0.2) => {
     if (
       playerRef.current &&
       seconds - playerRef.current.getCurrentTime() > maxDelay
