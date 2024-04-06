@@ -21,7 +21,7 @@ const VideoStats = (props: VideoStatsProps) => {
   }, []);
 
   return (
-    <section className="inline-flex justify-between rounded-xl bg-zinc-900 p-4 text-zinc-500">
+    <section className="inline-flex justify-between rounded-xl bg-zinc-900 p-2 text-xs text-zinc-500 lg:p-4 lg:text-base">
       <p>🟢 {usersOnline} cat lovers watching</p>
       <p>
         {props.isSynchronized ? "👍 You're in sync" : "👎 You're out of sync"}

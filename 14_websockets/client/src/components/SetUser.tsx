@@ -30,14 +30,14 @@ const SetUser = () => {
           autoFocus={true}
           onChange={(e) => setInputValue(e.target.value)}
           value={inputValue}
-          className="h-12 w-full rounded-xl bg-zinc-950 font-bold text-white placeholder:font-normal"
+          className="h-10 w-full rounded-xl bg-zinc-950 text-sm text-white lg:h-12 lg:text-base"
           placeholder="Enter your username..."
         ></Input>
 
         <Button
           type="submit"
           isDisabled={username === ""}
-          className="flex size-12 items-center justify-center rounded-xl border-0 bg-rose-500 p-0 shadow-none hover:bg-rose-700"
+          className="flex size-10 items-center justify-center rounded-xl border-0 bg-rose-500 p-0 shadow-none hover:bg-rose-700 lg:size-12"
         >
           <FaCheck />
         </Button>

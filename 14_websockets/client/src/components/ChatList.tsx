@@ -15,7 +15,7 @@ const ChatList = ({ messages }: Props) => {
     scrollToBottom();
   }, [messages]);
   return (
-    <ul className="mb-4 flex h-full flex-col gap-4 overflow-y-auto">
+    <ul className="mb-4 flex h-full flex-col gap-2 overflow-y-auto lg:gap-4">
       {messages.map((message) => (
         <ChatMessage message={message} />
       ))}

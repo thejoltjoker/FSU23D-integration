@@ -55,13 +55,13 @@ function App() {
 
   return (
     <UserContext.Provider value={{ username, setUsername }}>
-      <main className="flex h-screen flex-col p-4">
-        <header className="w-full pb-4 text-center text-5xl font-bold text-white lg:text-left">
+      <main className="flex h-screen flex-col p-2 pt-4 lg:p-4">
+        <h1 className="w-full pb-4 text-center text-2xl font-bold text-white lg:text-left lg:text-5xl">
           😻 Catlovers United 😻
-        </header>
+        </h1>
         {/* <p>isConnected: {JSON.stringify(isConnected)}</p> */}
-        <div className="flex h-full flex-col gap-4 lg:flex-row">
-          <section className="flex w-full flex-col gap-4">
+        <div className="flex h-full flex-col gap-2 lg:flex-row lg:gap-4">
+          <section className="flex w-full flex-col gap-2 lg:gap-4">
             <VideoPlayer
               updateProgress={(value: boolean) => {
                 setIsSynchronized(value);
@@ -69,7 +69,7 @@ function App() {
             />
             <VideoStats isSynchronized={isSynchronized} />
           </section>
-          <section className="flex h-full w-full flex-col justify-between rounded-xl bg-zinc-900 p-4 lg:max-w-md">
+          <section className="flex h-full w-full flex-col justify-between rounded-xl bg-zinc-900 p-2 lg:max-w-md lg:p-4">
             <ChatList messages={messages} />
             {username ? <CreateMessage /> : <SetUser />}
           </section>
